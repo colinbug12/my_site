@@ -10,13 +10,15 @@ hr {
     width: 30%;
 }
 
-h1 {
+h1,
+h3,
+p,
+li {
     color: lightpink;
 }
 
-h3 {
-    color: lightpink;
-}
+
+
 
 .customImage {
     background: url(../images/Family.JPG);
@@ -29,10 +31,4 @@ h3 {
     width: 200px;
     height: 150px;
 
-}
-
-
-
-p {
-    color: lightpink;
 }
