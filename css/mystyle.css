@@ -22,7 +22,7 @@ hr {
 
 
 
-.customImage {
+/* .customImage {
     background: url(../images/Family.JPG);
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,4 +33,47 @@ hr {
     width: 200px;
     height: 150px;
 
+} */
+
+.card {
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 15px rgb(17, 0, 0);
+    margin: 15px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+}
+
+.front {
+    background: url(../images/Family.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.back {
+    background: white;
+    transform: rotateY(180deg);
 }
